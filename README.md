@@ -16,19 +16,18 @@ Install dependencies
 cmd$> npm install
 ```
 
-
 Compile contracts
 ```console
 cmd$> npx hardhat compile
 ```
 
-Deploy contracts (default is local network `hardhat`)
+Deploy contracts (default is testnet network `hardhat`)
 ```console
 cmd$> npx hardhat run scripts/deploy.js --network <your-network>
 ```
 
-
-Run solhint
+Verify contracts (default is testnet network `hardhat`)
 ```console
-cmd$> npx solhint --formatter table 'contracts/**/*.sol'
+cmd$> npx hardhat run scripts/verify.js --network <your-network>
 ```
+
